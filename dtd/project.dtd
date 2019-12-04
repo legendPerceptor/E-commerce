@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT 电子商务系统设计 (组员列表, 项目设计)*>
+<!ELEMENT 组员列表 (组员)>
+<!ELEMENT 组员 (姓名,性别,学号,班级,EMAIL+)>
+<!ELEMENT 性别 (男|女)>
+<!ELEMENT 姓名 (#PCDATA)>
+<!ELEMENT 学号 (#PCDATA)>
+<!ELEMENT 班级 (#PCDATA)>
+<!ELEMENT EMAIL (#PCDATA)>
+<!ELEMENT 项目设计 (主题,简介)>
+<!ELEMENT 主题 (#PCDATA)>
+<!ELEMENT 简介 (#PCDATA)>
+
+<!ATTLIST 项目设计
+    指导老师 CDATA #REQUIRED
+    课程时间 CDATA #REQUIRED
+    项目编号 IDREF #IMPLIED
+>
+<!ATTLIST 组员列表
+    组号 ID #REQUIRED
+>

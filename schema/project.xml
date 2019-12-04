@@ -1,0 +1,30 @@
+<?xml version ="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="project.xsl" type="text/xsl" ?>
+
+<电子商务系统设计 xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="project.xsd">
+    <组员列表 组号="27">
+        <组员>
+            <姓名>刘远见</姓名>
+            <性别>男</性别>
+            <学号>3160103078</学号>
+            <班级>求计1601</班级>
+            <EMAIL>3160103078@zju.edu.cn</EMAIL>
+            <EMAIL>liuyuanjian@zju.edu.cn</EMAIL>
+            <职责>后端</职责>
+        </组员>
+        <组员>
+            <姓名>张习远</姓名>
+            <性别>女</性别>
+            <学号>3160104997</学号>
+            <班级>求计1601</班级>
+            <EMAIL>3160104997@zju.edu.cn</EMAIL>
+            <职责>前端</职责>
+        </组员>
+    </组员列表>
+    <项目设计 指导老师="郑小林" 课程时间="周一9/10" 项目编号="27">
+        <主题>电子商务系统</主题>
+        <简介>我们打算使用React和Node.js设计一款类似于Amazon的小型电子商务系统，实现登录、浏览、加入购物车、下单、数据库服务等功能。用UML图设计好不同类之间的接口，爬取网上商品信息写成一个CSV文件作为商品表。数据库采用MongoDB以适应大量的不同门类的商品。大致分为前/后端两部分的工作：前端负责各部分界面的设计，处理UI交互与界面美化；后端负责完成数据库逻辑以及HTTP请求逻辑。前后端通信采用JSON格式。</简介>
+    </项目设计>
+</电子商务系统设计>

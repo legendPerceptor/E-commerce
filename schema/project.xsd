@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://www.w3schools.com"
+xmlns="https://www.w3schools.com"
+elementFormDefault="qualified">
+
+<xs:element name="电子商务系统设计">
+    <xs:element name="组员列表" type="组员列表类型"/>
+    <xs:element name="项目设计" type="项目设计类型"/>
+</xs:element>
+
+<xs:complexType name="组员列表类型">
+    <xs:attribute name="组号" type="xs:integer"/>
+    <xs:element name="组员" type="组员类型" minOccurs="1" maxOccurs="2"/>
+</xs:complexType>
+
+<xs:complexType name="组员类型">
+    <xs:sequence>
+        <xs:element name="姓名" type="xs:string" />
+        <xs:element name="学号" type="xs:string" />
+        <xs:element name="EMALI" type="xs:string" maxOccurs="3"/>
+        <xs:element name="班级" type="xs:string" />
+        <xs:element name="性别" type="xs:string" />
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="项目设计类型">
+    <xs:attributeGroup ref="ProjectAttr"/> 
+    <xs:sequence>
+        <xs:element name="主题" type="xs:string"/>
+        <xs:element name="简介" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:attributeGroup name="ProjectAttr">
+    <xsd:attribute name="指导老师" type="xs:string"/>
+    <xsd:attribute name="课程时间" type="xs:string"/>
+    <xsd:attribute name="项目编号" type="xs:integer"/>
+</xs:attributeGroup>
+
+</xs:schema>
